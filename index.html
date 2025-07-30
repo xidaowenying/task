@@ -1,173 +1,80 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="earth.jpg">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <title>html&css</title>
 </head>
+
 <body>
     <header>
-        <h1>山田太郎</h1>
+        <img src="logo.svg" class="logo">
         <nav>
-            <!-- 目次部分 -->
-             <ul>
-                <li><a href="#myself">私について</a></li>
-                <li><a href="#skills">スキル</a></li>
-                <li><a href="#achivements">実績</a></li>
-                <li><a href="#contact">問い合わせ</a></li>
-             </ul>
-            
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><img src="Instagram_Glyph_Black.jpg"
+                            alt="instalogo" width="25%"></a></li>
+            </ul>
         </nav>
     </header>
-    <main>
-        <section class="earth">
-            <img id="sample" src="image/earth.jpg" alt="地球の写真">
-        </section>
-        <div class="container">
-            <div class="context">
-
-                <section>
-                    <h3 class="portfolio1 section1">ポートフォリオについて</h3>
-                    <p>このポートフォリオのサイトは私のスキルと実績を皆さんに共有できるサイト制作をしました。<br>
-                        <mark>HTMLとCSSの言語のみで作成できるサイトは自信があります。</mark><br>
-                        なので<b><u>企業HPの依頼がありましたら</u></b>お問い合わせお願いします。
-                    </p>
-                </section>
-                <section id="myself">
-                    <h3 class="me section1">私について</h3>
-                    <p>
-                        私はエンジニアとして1年仕事をしています。<br>今私はHTMLとCSSを学びJavaScriptを学習しようとしています。<br>
-                        <mark>SEO対策とレイアウト調整、デザインの自信はあります</mark>。まだまだアプリで学習ですが共同作業できる様に知識をつけていきます。
-                    </p>
-                </section>
-                <section id="skills">
-                    <h3 class="aboutskill section1">スキルについて</h3>
-                    <p class="skillstext">取得言語についてわかりやすく説明いたします。<br>
-                        プログラミングには目的を設定をして作りたいものに対してどういう言語を学べば作りあげれるのか理解しないといけないです。<br>
-                        その時私が必要な言語を取得したのが下記の言語です。この言語を取得して作成したHP(ホームページ)が更にその下の実績の項目で閲覧できる様になっています。
-                    </p>
-                    <div class="myskill">
-                        <div class="item1">
-                            <h1>HTML&CSS</h1>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, blanditiis cum! Quia
-                                eaque
-                                mollitia
-                                eos
-                                molestias illo id vel assumenda.</p>
-                            <img src="image/htmlcss.webp" alt="cat" width="100%">
-                        </div>
-                        <div class="item1">
-                            <h1>JS</h1>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, blanditiis cum! Quia
-                                eaque
-                                mollitia
-                                eos
-                                molestias illo id vel assumenda.</p>
-                            <img src="image/js.jpg" alt="孔雀" width="100%">
-                        </div>
-                        <div class="item1">
-                            <h1>Git</h1>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, blanditiis cum! Quia
-                                eaque
-                                mollitia
-                                eos
-                                molestias illo id vel assumenda.</p>
-                            <img src="image/git.jpg" alt="lion" width="100%">
-                        </div>
-                        <div class="item1">
-                            <h1>SQL</h1>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, blanditiis cum! Quia
-                                eaque
-                                mollitia
-                                eos
-                                molestias illo id vel assumenda.</p>
-                            <img src="image/sql.jpg" alt="snake" width="100%">
-                        </div>
-                        <div class="item1">
-                            <h1>PHP</h1>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, blanditiis cum! Quia
-                                eaque
-                                mollitia
-                                eos
-                                molestias illo id vel assumenda.</p>
-                            <img src="image/php.jpg" alt="whitebear" width="100%">
-                        </div>
-                    </div>
-
-                </section>
-                <section id="achivements">
-                    <h3 class="achivement2 section1">実績について</h3>
-                    <p class="achivementstext">私がこれまでについて作成したHPを紹介します。</p>
-                    <div class="item2-1 item2">
-                        <h1>ポートフォリオ</h1>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam magnam, illo dicta explicabo
-                            ipsum
-                            quisquam?
-                            Explicabo, esse voluptate nam, rerum omnis sapiente, inventore nobis aliquid quis rem
-                            nesciunt!
-                            Iste,
-                            optio.<br>
-                        </p>
-                        <a href="https://code-jump.com/demo/html/profile/" class="portfolio item3">ポートフォリオサイトを閲覧する</a>
-                    </div>
-
-
-                    <div class="item2-2 item2">
-                        <h1>ECサイト</h1>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam magnam, illo dicta explicabo
-                            ipsum
-                            quisquam?
-                            Explicabo, esse voluptate nam, rerum omnis sapiente, inventore nobis aliquid quis rem
-                            nesciunt!
-                            Iste,
-                            optio.<br>
-                        </p>
-                        <a href="https://code-jump.com/demo/html/store2/" class="shopping item3">ショッピングサイトを閲覧する</a>
-                    </div>
-
-                    <div class="item2-3 item2">
-                        <h1>スニーカサイト</h1>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam magnam, illo dicta explicabo
-                            ipsum
-                            quisquam?
-                            Explicabo, esse voluptate nam, rerum omnis sapiente, inventore nobis aliquid quis rem
-                            nesciunt!
-                            Iste,
-                            optio.<br>
-                        </p>
-                        <a href="https://code-jump.com/demo/html/media/" class="sneaker item3">スニーカー販売サイトを閲覧する</a>
-                    </div>
-
-
-
-                </section>
-            </div>
+    <div class="mainvisual"><img src="mainvisual-pc.jpg" alt="topimage"></div>
+    <div class="content1 main">
+        <h1 id="about">About</h1>
+        <p class="content1-1">Xxxxx Ashley</p>
+        <p class="content1-2">2th Floor xxxxx Building x-x-x Nishiazabu, Minato-ku, Tokyo 106-0031 Japan<br>
+            tel: 000-0000-0000<br>
+            url: www.xxxxxx.jp<br>
+            mail: xxx@xxxxxx.jp</p>
+        <p class="content1-3">プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+    </div>
+    <div class="content2 main">
+        <h1 id="works">Works</h1>
+        <div>
+            <img src="works1.jpg" class="content2pic" alt="pic1">
+            <img src="works2.jpg" class="content2pic" alt="pic2">
+            <img src="works3.jpg" class="content2pic" alt="pic3">
+            <img src="works4.jpg" class="content2pic" alt="pic4">
+            <img src="works5.jpg" class="content2pic" alt="pic5">
+            <img src="works6.jpg" class="content2pic" alt="pic6">
         </div>
-    </main>
+    </div>
+    <div class="content3 main">
+        <h1 id="news">News</h1>
+        <dl class="news2">
+            <dt>2020.XX.XX</dt>
+            <dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。</dd>
+            <dt>2020.XX.XX</dt>
+            <dd>ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。</dd>
+            <dt>2019.XX.XX</dt>
+            <dd>【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd>
+            <dt>2019.XX.XX</dt>
+            <dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。</dd>
+            <dt>2019.XX.XX</dt>
+            <dd>【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd>
+        </dl>
+    </div>
+    <div class="content4 main">
+        <h1 id="contact">Contact</h1>
+        <dl class="contact2">
+            <dt>NAME</dt>
+            <dd><input type="text"></dd>
+            <dt>E-mail</dt>
+            <dd><input type="text"></dd>
+            <dt>MESSAGE</dt>
+            <dd><textarea rows="10" cols="100"></textarea></dd>
+        </dl>
+        <button type="button" class="button">送信</button>
+    </div>
     <footer>
-        <section id="contact">
-            <h1>お問い合わせFORM</h1>
-            <p class="item4">全て埋めて送信ボタンを押して問い合わせください</p>
-            <hr>
-            <label class="item5">
-                <p>名前</p>
-                <input types="text" placeholder="フルネームで名前を書いてください">
-            </label>
-            <label class="item5">
-                <p>メールアドレス</p>
-                <input types="text" placeholder="PCメールアドレスを書いてください">
-            </label>
-            <label class="item5">
-                <p>質問</p>
-                <textarea rows="10" cols="170" placeholder="聞きたい質問を書いてください"></textarea>
-            </label>
-            <hr>
-        </section>
-        <!-- 著作権など最後の部分（小文字） -->
-        <a href="#top" id="back">TOPに戻る</a>
-        <p id="taro">山田太郎の公式ホームページ@All company</p>
+        <p>2020 my works</p>
     </footer>
+
 </body>
+
 </html>
