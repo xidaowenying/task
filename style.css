@@ -4,138 +4,294 @@
     box-sizing: border-box;
 }
 
-header p {
-    width: 15%;
-    font-size: 1.5rem;
-    /* border: 1px solid pink; */
-    color: rgb(43, 43, 155);
-    text-align: center;
+
+.logo {
+    margin-top: 20px;
+}
+
+ul {
+
+    display: flex;
+    padding: 10px 0;
+    /* margin: auto 10px; */
+
+}
+
+li {
+    list-style: none;
+
 }
 
 header {
     display: flex;
-    margin: 20px 20%;
+    padding: auto 0;
+    align-items: center;
     justify-content: space-between;
+    height: 240px;
 }
 
-.button {
-    /* box-sizing: border-box; */
-    width: 180px;
-    height: 45px;
-    background-color: rgb(3, 183, 3);
-    border-radius: 5px;
-    color: white;
+a {
+    display: block;
+    /* width: 80px; */
     text-align: center;
-    padding-top: 10px;
-    font-weight: bold;
+    padding: auto 5px;
     text-decoration: none;
+    color: black;
+    font-size: 14px;
 }
 
-.class1 {
-    box-sizing: border-box;
-    /* border: 1px solid green; */
-    background-color: rgb(254, 254, 138);
-    padding: 50px;
-    /* display: flex; */
-    text-align: center;
-    /* padding: 0 auto; */
-
+header li {
+    padding-left: 20px;
 }
 
-.class1content {
-    padding-left: 300px;
-    display: flex;
-    border: 1px solid blue;
-    
-}
-.lefttitle{
-    color: rgb(43, 43, 155);
-    font-size: 1.5rem;
-    margin: 20px 0;
+/* liの最初のアイテムに指定 */
+header li:first-child {
+    padding-left: 0;
 }
 
-.class2 {
-    border: 1px solid blue;
-    margin: 80px 20%;
-
+/* liの最後のimgに指定 */
+header li:last-child img {
+    width: 20px;
 }
 
-.class2title {
-    text-align: center;
-    font-size: 1.5rem;
-    color: rgb(43, 43, 155);
-    margin-bottom: 80px;
-}
 
-.class2-1 {
-    display: flex;
-    flex-direction: row-reverse
-}
 
-.class2-1titel {
-    color: rgb(43, 43, 155);
-    font-size: 1.2rem;
-}
-
-.class2-1 img {
-    margin-right: 100px;
-    height: 15%;
-
-}
-
-.class2content {
-    border: 1px solid blue;
-    margin: 20px 0;
-    text-align: left;
-    width: 60%;
-}
-
-.p1 {
-    margin: 20px 0;
-}
-
-.class3 {
-    border: 1px solid blue;
-    margin: 0 20%;
+.mainvisual {
+    width: 100%;
+    height: 60vh;
     margin-bottom: 100px;
 }
 
-.class3 h1 {
+.mainvisual img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+
+
+.main {
+    max-width: 900px;
     text-align: center;
-}
-
-.class3content {
-    display: flex;
-
-}
-
-.class3-1 {
-    width: calc((80% - 20px)/ 3);
     margin: 0 auto;
-    border: 1px solid blue;
-
 }
 
-.user1 {
-    display: flex;
-    margin-bottom: 0;
+h1 {
+    font-size: 25px;
 }
 
-.footer1 {
-    background-color: rgb(254, 254, 138);
+/* ------About------------------------------------ */
+#about {
     text-align: center;
-    padding: 50px 0;
-    font-size: 1.5rem;
-    color: rgb(43, 43, 155);
-    /* font-weight: 100; */
-}
-.footer1 p{
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
-.footer2 {
+.content1 {
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 120px;
+
+}
+
+.content1-1 {
+    margin-bottom: 30px;
+}
+
+.content1-2 {
+    margin-bottom: 30px;
+}
+
+/* ---------------works------------------------- */
+#works {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.content2 {
+    margin-bottom: 150px;
+}
+
+.content2 div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.content2 div img {
+    width: calc((100% - 24px) / 3);
+    /* width: 100%;
+    padding-right: 30px; */
+}
+
+
+/* -------------------news--------------------------- */
+#news {
+    text-align: center;
+    margin: 80px auto;
+}
+
+.content3 {
+    text-align: left;
+    margin-bottom: 150px;
+    font-size: 14px;
+    /* border: 1px solid pink; */
+
+}
+
+.content3 dt {
+    width: 20%;
+    border-bottom: 1px solid rgb(209, 207, 207);
+    padding: 15px;
+
+}
+
+.content3 dd {
+    width: 80%;
+    border-bottom: 1px solid rgb(209, 207, 207);
+    padding: 15px;
+
+}
+
+.news2 {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid rgb(209, 207, 207);
+
+}
+
+
+/*------------ contact-------------------------------- */
+input {
+    width: 80%;
+}
+
+#contact {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.contact2 dt {
+    width: 15%;
+    text-align: left;
+    /* border: 1px solid pink; */
+    margin: 5px 0;
+}
+
+.contact2 dd {
+    width: 85%;
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+.contact2 dd input {
+    width: 100%;
+    line-height: 1.5em;
+    padding: 10px;
+    border: 1px solid rgb(195, 194, 194);
+}
+
+.contact2 dd input:focus {
+    outline: none;
+}
+
+.contact2 dd textarea {
+    width: 100%;
+    border: 1px solid rgb(195, 194, 194);
+    padding: 10px;
+}
+
+.contact2 dd textarea:focus {
+    outline: none;
+}
+
+.contact2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button {
+    width: 200px;
+    height: 50px;
     background-color: black;
     color: white;
-    text-align: center;
-    padding: 60px 0;
+    margin-bottom: 50px;
+    margin-top: 30px;
 }
+
+.button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 0.5rem;
+    text-align: center;
+    padding: 5px;
+}
+
+
+/* ーーーーーーー@media-------------------------------- */
+@media (max-width: 440px) {
+
+    .main {
+        width: 90%;
+
+    }
+
+    header {
+        flex-direction: column;
+        height: auto;
+        margin: 0 4%;
+    }
+
+    a {
+        font-size: 12px;
+    }
+
+    .content2 div img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .news2 {
+        /* display: block; */
+        flex-direction: column;
+
+    }
+
+    /* padding-bottom: none; ではエラーを起こしてしまう */
+    .content3 dt {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    /* padding-top: none; ではエラーを起こしてしまう */
+    .content3 dd {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .contact2 {
+        flex-direction: column;
+    }
+
+    .contact2 dd {
+        width: 100%;
+    }
+
+    .contact2 dt {
+        margin-bottom: 0;
+        font-size: 0.9rem;
+    }
+
+    .contact2 dd {
+        margin-top: 0;
+    }
+}
+
+
+
+/* classを使うのは最終手段。なるべくタグでCSSの指定をする */
